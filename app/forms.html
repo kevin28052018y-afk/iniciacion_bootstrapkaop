@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="es-CO">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../assets/img/logo.png" type="image/x-icon">
+
+    <meta name="author" content="Kevin Osorio">
+    <meta name="description" content="Taller 3 de maquetacion web - Selección de Portugal">
+    <meta name="keywords" content="TALLER, taller, Taller, Portugal, Bootstrap">
+   
+    <meta name="theme-color" content="#8B0000">
+    <meta name="MobileOptimized" content="width">
+    <meta name="HandheldFriendly" content="true">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <title>Tablas Bootstrap - Selección de Portugal</title>
+
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+    
+    <!-- Estilos personalizados inspirados en la Selección Portuguesa -->
+    <style>
+        body {
+            background-color: #f4f6f9;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        /* Encabezado principal con la bandera/colores en degradado */
+        .portugal-header {
+            background: linear-gradient(135deg, #006629 30%, #900020 70%);
+            color: #ffffff;
+            border-bottom: 5px solid #D4AF37; /* Borde Dorado */
+            border-radius: 15px;
+        }
+        /* Título dorado */
+        .gold-text {
+            color: #FFD700;
+            font-weight: bold;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+        }
+        /* Tarjeta contenedora de la tabla */
+        .table-card {
+            border: none;
+            border-radius: 15px;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+        /* Cabecera de la tabla en Verde Oficial */
+        .table-portugal-dark {
+            background-color: #004d1c !important;
+            color: #ffffff !important;
+            border-bottom: 3px solid #D4AF37 !important;
+        }
+        /* Estilo para las filas alternas (Rojo sumamente sutil) */
+        .table-striped > tbody > tr:nth-of-type(odd) {
+            background-color: rgba(144, 0, 32, 0.03);
+        }
+        /* Efecto Hover en Rojo Portugués */
+        .table-hover > tbody > tr:hover {
+            background-color: rgba(144, 0, 32, 0.08) !important;
+            transition: background-color 0.2s ease-in-out;
+        }
+        /* Insignia de ID */
+        .badge-id {
+            background-color: #900020;
+            color: #ffffff;
+            font-weight: bold;
+        }
+        /* Badge para el Dorsal */
+        .badge-dorsal {
+            background-color: #D4AF37;
+            color: #000000;
+            font-weight: 800;
+        }
+    </style>
+</head>
+<body>
+    <header>
+
+    </header>
+    <main>
+        <div class="container my-5" rol="main">
+            
+            <!-- Banner Superior de Portugal -->
+            <div class="portugal-header p-5 mb-4 text-center shadow-sm">
+                <h1 class="display-5 fw-bold m-0">SELECÇÃO NACIONAL <span class="gold-text">PORTUGAL</span></h1>
+                <p class="lead mt-2 mb-0 text-white-50">Plantilla Oficial de Jugadores y Estadísticas - Taller 3</p>
+            </div>
+
+            <!-- Contenedor Estilizado de la Tabla -->
+            <div class="card table-card">
+                <div class="table-responsive">
+                    <table class="table table-striped table-hover align-middle mb-0 text-center">
+                        <thead class="table-portugal-dark text-uppercase fs-7 tracking-wider">
+                            <tr>
+                                <th scope="col" class="py-3">Id</th>
+                                <th scope="col" class="py-3">Firstname</th>
+                                <th scope="col" class="py-3">Lastname</th>
+                                <th scope="col" class="py-3">Dorsal</th>
+                                <th scope="col" class="py-3">Sports Club</th>
+                                <th scope="col" class="py-3">Age</th>
+                                <th scope="col" class="py-3">Salary (€)</th>
+                                <th scope="col" class="py-3">City of Birth</th>
+                                <th scope="col" class="py-3">Birth Department</th>
+                                <th scope="col" class="py-3">Nationality</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><span class="badge badge-id px-2 py-1 rounded">1</span></td>
+                                <td class="fw-bold">Cristiano</td>
+                                <td class="text-secondary fw-semibold">Ronaldo</td>
+                                <td><span class="badge badge-dorsal rounded-circle p-2">7</span></td>
+                                <td>Al-Nassr</td>
+                                <td>41</td>
+                                <td class="text-success fw-bold">200.000.000</td>
+                                <td>Funchal</td>
+                                <td>Madeira</td>
+                                <td><span class="text-uppercase small fw-bold text-muted">Portuguesa</span></td>
+                            </tr>
+                            <tr>
+                                <td><span class="badge badge-id px-2 py-1 rounded">2</span></td>
+                                <td class="fw-bold">Bruno</td>
+                                <td class="text-secondary fw-semibold">Fernandes</td>
+                                <td><span class="badge badge-dorsal rounded-circle p-2">8</span></td>
+                                <td>Manchester United</td>
+                                <td>31</td>
+                                <td class="text-success fw-bold">15.000.000</td>
+                                <td>Maia</td>
+                                <td>Porto</td>
+                                <td><span class="text-uppercase small fw-bold text-muted">Portuguesa</span></td>
+                            </tr>
+                            <tr>
+                                <td><span class="badge badge-id px-2 py-1 rounded">3</span></td>
+                                <td class="fw-bold">Bernardo</td>
+                                <td class="text-secondary fw-semibold">Silva</td>
+                                <td><span class="badge badge-dorsal rounded-circle p-2">10</span></td>
+                                <td>Manchester City</td>
+                                <td>31</td>
+                                <td class="text-success fw-bold">16.000.000</td>
+                                <td>Lisboa</td>
+                                <td>Lisboa</td>
+                                <td><span class="text-uppercase small fw-bold text-muted">Portuguesa</span></td>
+                            </tr>
+                            <tr>
+                                <td><span class="badge badge-id px-2 py-1 rounded">4</span></td>
+                                <td class="fw-bold">Rúben</td>
+                                <td class="text-secondary fw-semibold">Dias</td>
+                                <td><span class="badge badge-dorsal rounded-circle p-2">3</span></td>
+                                <td>Manchester City</td>
+                                <td>29</td>
+                                <td class="text-success fw-bold">11.000.000</td>
+                                <td>Amadora</td>
+                                <td>Lisboa</td>
+                                <td><span class="text-uppercase small fw-bold text-muted">Portuguesa</span></td>
+                            </tr>
+                            <tr>
+                                <td><span class="badge badge-id px-2 py-1 rounded">5</span></td>
+                                <td class="fw-bold">Rafael</td>
+                                <td class="text-secondary fw-semibold">Leão</td>
+                                <td><span class="badge badge-dorsal rounded-circle p-2">10</span></td>
+                                <td>AC Milan</td>
+                                <td>27</td>
+                                <td class="text-success fw-bold">7.000.000</td>
+                                <td>Almada</td>
+                                <td>Setúbal</td>
+                                <td><span class="text-uppercase small fw-bold text-muted">Portuguesa</span></td>
+                            </tr>
+                            <tr>
+                                <td><span class="badge badge-id px-2 py-1 rounded">6</span></td>
+                                <td class="fw-bold">João</td>
+                                <td class="text-secondary fw-semibold">Félix</td>
+                                <td><span class="badge badge-dorsal rounded-circle p-2">7</span></td>
+                                <td>Chelsea</td>
+                                <td>26</td>
+                                <td class="text-success fw-bold">6.000.000</td>
+                                <td>Viseu</td>
+                                <td>Viseu</td>
+                                <td><span class="text-uppercase small fw-bold text-muted">Portuguesa</span></td>
+                            </tr>
+                            <tr>
+                                <td><span class="badge badge-id px-2 py-1 rounded">7</span></td>
+                                <td class="fw-bold">Diogo</td>
+                                <td class="text-secondary fw-semibold">Jota</td>
+                                <td><span class="badge badge-dorsal rounded-circle p-2">20</span></td>
+                                <td>Liverpool</td>
+                                <td>29</td>
+                                <td class="text-success fw-bold">8.500.000</td>
+                                <td>Porto</td>
+                                <td>Porto</td>
+                                <td><span class="text-uppercase small fw-bold text-muted">Portuguesa</span></td>
+                            </tr>
+                            <tr>
+                                <td><span class="badge badge-id px-2 py-1 rounded">8</span></td>
+                                <td class="fw-bold">João</td>
+                                <td class="text-secondary fw-semibold">Cancelo</td>
+                                <td><span class="badge badge-dorsal rounded-circle p-2">2</span></td>
+                                <td>Al-Hilal</td>
+                                <td>32</td>
+                                <td class="text-success fw-bold">15.000.000</td>
+                                <td>Barreiro</td>
+                                <td>Setúbal</td>
+                                <td><span class="text-uppercase small fw-bold text-muted">Portuguesa</span></td>
+                            </tr>
+                            <tr>
+                                <td><span class="badge badge-id px-2 py-1 rounded">9</span></td>
+                                <td class="fw-bold">Victor</td>
+                                <td class="text-secondary fw-semibold">Machado</td>
+                                <td><span class="badge badge-dorsal rounded-circle p-2">17</span></td>
+                                <td>Paris Saint-Germain</td>
+                                <td>26</td>
+                                <td class="text-success fw-bold">5.500.000</td>
+                                <td>Santo Tirso</td>
+                                <td>Porto</td>
+                                <td><span class="text-uppercase small fw-bold text-muted">Portuguesa</span></td>
+                            </tr>
+                            <tr>
+                                <td><span class="badge badge-id px-2 py-1 rounded">10</span></td>
+                                <td class="fw-bold">Gonçalo</td>
+                                <td class="text-secondary fw-semibold">Ramos</td>
+                                <td><span class="badge badge-dorsal rounded-circle p-2">9</span></td>
+                                <td>Paris Saint-Germain</td>
+                                <td>24</td>
+                                <td class="text-success fw-bold">6.000.000</td>
+                                <td>Olhão</td>
+                                <td>Faro</td>
+                                <td><span class="text-uppercase small fw-bold text-muted">Portuguesa</span></td>
+                            </tr>
+                            <tr>
+                                <td><span class="badge badge-id px-2 py-1 rounded">11</span></td>
+                                <td class="fw-bold">Diogo</td>
+                                <td class="text-secondary fw-semibold">Costa</td>
+                                <td><span class="badge badge-dorsal rounded-circle p-2">99</span></td>
+                                <td>FC Porto</td>
+                                <td>26</td>
+                                <td class="text-success fw-bold">3.000.000</td>
+                                <td>Rothrist</td>
+                                <td>Argovia (Suiza)</td>
+                                <td><span class="text-uppercase small fw-bold text-muted">Portuguesa</span></td>
+                            </tr>
+                            <tr>
+                                <td><span class="badge badge-id px-2 py-1 rounded">12</span></td>
+                                <td class="fw-bold">João</td>
+                                <td class="text-secondary fw-semibold">Palhinha</td>
+                                <td><span class="badge badge-dorsal rounded-circle p-2">16</span></td>
+                                <td>Bayern Múnich</td>
+                                <td>30</td>
+                                <td class="text-success fw-bold">10.000.000</td>
+                                <td>Lisboa</td>
+                                <td>Lisboa</td>
+                                <td><span class="text-uppercase small fw-bold text-muted">Portuguesa</span></td>
+                            </tr>
+                            <tr>
+                                <td><span class="badge badge-id px-2 py-1 rounded">13</span></td>
+                                <td class="fw-bold">Nuno</td>
+                                <td class="text-secondary fw-semibold">Mendes</td>
+                                <td><span class="badge badge-dorsal rounded-circle p-2">25</span></td>
+                                <td>Paris Saint-Germain</td>
+                                <td>23</td>
+                                <td class="text-success fw-bold">5.000.000</td>
+                                <td>Sintra</td>
+                                <td>Lisboa</td>
+                                <td><span class="text-uppercase small fw-bold text-muted">Portuguesa</span></td>
+                            </tr>
+                            <tr>
+                                <td><span class="badge badge-id px-2 py-1 rounded">14</span></td>
+                                <td class="fw-bold">Pedro</td>
+                                <td class="text-secondary fw-semibold">Neto</td>
+                                <td><span class="badge badge-dorsal rounded-circle p-2">19</span></td>
+                                <td>Chelsea</td>
+                                <td>26</td>
+                                <td class="text-success fw-bold">6.000.000</td>
+                                <td>Viana do Castelo</td>
+                                <td>Viana do Castelo</td>
+                                <td><span class="text-uppercase small fw-bold text-muted">Portuguesa</span></td>
+                            </tr>
+                            <tr>
+                                <td><span class="badge badge-id px-2 py-1 rounded">15</span></td>
+                                <td class="fw-bold">Francisco</td>
+                                <td class="text-secondary fw-semibold">Conceição</td>
+                                <td><span class="badge badge-dorsal rounded-circle p-2">7</span></td>
+                                <td>Juventus</td>
+                                <td>23</td>
+                                <td class="text-success fw-bold">3.500.000</td>
+                                <td>Coimbra</td>
+                                <td>Coimbra</td>
+                                <td><span class="text-uppercase small fw-bold text-muted">Portuguesa</span></td>
+                            </tr>
+                            <tr>
+                                <td><span class="badge badge-id px-2 py-1 rounded">16</span></td>
+                                <td class="fw-bold">Otávio</td>
+                                <td class="text-secondary fw-semibold">Parra</td>
+                                <td><span class="badge badge-dorsal rounded-circle p-2">25</span></td>
+                                <td>Al-Nassr</td>
+                                <td>31</td>
+                                <td class="text-success fw-bold">13.000.000</td>
+                                <td>João Pessoa</td>
+                                <td>Paraíba (Brasil)</td>
+                                <td><span class="text-uppercase small fw-bold text-muted">Portuguesa</span></td>
+                            </tr>
+                            <tr>
+                                <td><span class="badge badge-id px-2 py-1 rounded">17</span></td>
+                                <td class="fw-bold">Diogo</td>
+                                <td class="text-secondary fw-semibold">Dalot</td>
+                                <td><span class="badge badge-dorsal rounded-circle p-2">20</span></td>
+                                <td>Manchester United</td>
+                                <td>27</td>
+                                <td class="text-success fw-bold">6.200.000</td>
+                                <td>Braga</td>
+                                <td>Braga</td>
+                                <td><span class="text-uppercase small fw-bold text-muted">Portuguesa</span></td>
+                            </tr>
+                            <tr>
+                                <td><span class="badge badge-id px-2 py-1 rounded">18</span></td>
+                                <td class="fw-bold">Danilo</td>
+                                <td class="text-secondary fw-semibold">Pereira</td>
+                                <td><span class="badge badge-dorsal rounded-circle p-2">22</span></td>
+                                <td>Al-Ittihad</td>
+                                <td>34</td>
+                                <td class="text-success fw-bold">4.000.000</td>
+                                <td>Bisáu</td>
+                                <td>Guinea-Bisáu</td>
+                                <td><span class="text-uppercase small fw-bold text-muted">Portuguesa</span></td>
+                            </tr>
+                            <tr>
+                                <td><span class="badge badge-id px-2 py-1 rounded">19</span></td>
+                                <td class="fw-bold">João</td>
+                                <td class="text-secondary fw-semibold">Neves</td>
+                                <td><span class="badge badge-dorsal rounded-circle p-2">87</span></td>
+                                <td>Paris Saint-Germain</td>
+                                <td>21</td>
+                                <td class="text-success fw-bold">12.000.000</td>
+                                <td>Tavira</td>
+                                <td>Faro</td>
+                                <td><span class="text-uppercase small fw-bold text-muted">Portuguesa</span></td>
+                            </tr>
+                            <tr>
+                                <td><span class="badge badge-id px-2 py-1 rounded">20</span></td>
+                                <td class="fw-bold">Matheus</td>
+                                <td class="text-secondary fw-semibold">Nunes</td>
+                                <td><span class="badge badge-dorsal rounded-circle p-2">27</span></td>
+                                <td>Manchester City</td>
+                                <td>27</td>
+                                <td class="text-success fw-bold">7.800.000</td>
+                                <td>Río de Janeiro</td>
+                                <td>Río de Janeiro (Brasil)</td>
+                                <td><span class="text-uppercase small fw-bold text-muted">Portuguesa</span></td>
+                            </tr>
+                </tbody>
+                </thead>
+            </table>
+        </div>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+</html>
