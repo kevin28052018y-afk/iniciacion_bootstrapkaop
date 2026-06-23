@@ -11,52 +11,67 @@
     <title>Taller 3</title>
 </head>
 <body>
-    <header>
-        <nav class="navbar navbar-expand-sm navbar-dark bg-dark border-bottom border-primary border-opacity-25 fixed-top">
-        <div class="container-fluid">
-            <a class="navbar-brand fw-bold" href="#">
-            <i class="bi bi-hexagon-fill text-primary me-1"></i>K&Y
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-            <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav me-auto">
-                <li class="nav-item">
-                <a class="nav-link active d-flex align-items-center gap-1" href="#">
-                    <i class="bi bi-house text-primary"></i>Home
+<header>
+        <!-- NAVBAR: Efecto premium traslúcido flotante -->
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark border-bottom border-primary border-opacity-25 fixed-top px-3 py-2"
+             style="background-color: rgba(33, 37, 41, 0.85) !important; backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px);">
+            <div class="container-fluid">
+                <!-- LOGO -->
+                <a class="navbar-brand fw-bold d-flex align-items-center gap-1 text-white link-light" href="#">
+                    <i class="bi bi-hexagon-fill text-primary fs-4"></i>K&Y
                 </a>
-                </li>
-                <li class="nav-item">
-                <a class="nav-link d-flex align-items-center gap-1" href="#">
-                    <i class="bi bi-clipboard2-check text-primary"></i>Features
-                </a>
-                </li>
-                <li class="nav-item">
-                <a class="nav-link d-flex align-items-center gap-1" href="#">
-                    <i class="bi bi-tag text-primary"></i>Pricing
-                </a>
-                </li>
-                <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle d-flex align-items-center gap-1" href="#" role="button" data-bs-toggle="dropdown">
-                    <i class="bi bi-grid-1x2 text-primary"></i>Servicios
-                </a>
-                <ul class="dropdown-menu dropdown-menu-dark">
-                    <li><a class="dropdown-item d-flex align-items-center gap-2" href="#"><i class="bi bi-cloud-upload text-primary"></i>Hosting Cloud</a></li>
-                    <li><a class="dropdown-item d-flex align-items-center gap-2" href="#"><i class="bi bi-shield-check text-primary"></i>Seguridad</a></li>
-                    <li><a class="dropdown-item d-flex align-items-center gap-2" href="#"><i class="bi bi-bar-chart-line text-primary"></i>Analítica</a></li>
-                    <li><hr class="dropdown-divider"></li>
-                    <li><a class="dropdown-item d-flex align-items-center gap-2" href="#"><i class="bi bi-headset text-primary"></i>Soporte</a></li>
-                </ul>
-                </li>
-            </ul>
-            <div class="d-flex">
-                <a href="app/login.html" class="btn btn-primary d-flex align-items-center gap-2">
-                <i class="bi bi-box-arrow-in-right"></i>Acceder
-                </a>
+                
+                <!-- BOTÓN RESPONSIVE -->
+                <button class="navbar-toggler border-0 p-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <!-- ENLACES -->
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav me-auto mb-2 mb-md-0 gap-1 align-items-md-center">
+                        <li class="nav-item">
+                            <a class="nav-link active d-flex align-items-center gap-2 px-3 py-2 rounded-3 bg-primary bg-opacity-10 text-white fw-semibold" href="#">
+                                <i class="bi bi-house-door text-primary"></i>Home
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link d-flex align-items-center gap-2 px-3 py-2 rounded-3 transition-all" href="#">
+                                <i class="bi bi-lightning text-primary"></i>Features
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link d-flex align-items-center gap-2 px-3 py-2 rounded-3 transition-all" href="#">
+                                <i class="bi bi-credit-card text-primary"></i>Pricing
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link d-flex align-items-center gap-2 px-3 py-2 rounded-3 transition-all" href="https://github.com/kevin28052018y-afk/iniciacion_bootstrapkaop" target="_blank" rel="noopener noreferrer">
+                                <i class="bi bi-github text-primary"></i>Repository
+                            </a>
+                        </li>
+                        <!-- DROPDOWN: Servicios -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle d-flex align-items-center gap-2 px-3 py-2 rounded-3 transition-all" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="bi bi-grid text-primary"></i>Servicios
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-dark border-secondary border-opacity-50 shadow-lg rounded-3 mt-md-2">
+                                <li><a class="dropdown-item d-flex align-items-center gap-2 py-2" href="#"><i class="bi bi-cloud-upload text-primary"></i>Hosting Cloud</a></li>
+                                <li><a class="dropdown-item d-flex align-items-center gap-2 py-2" href="#"><i class="bi bi-shield-check text-primary"></i>Seguridad</a></li>
+                                <li><a class="dropdown-item d-flex align-items-center gap-2 py-2" href="#"><i class="bi bi-bar-chart-line text-primary"></i>Analítica</a></li>
+                                <li><hr class="dropdown-divider border-secondary border-opacity-50"></li>
+                                <li><a class="dropdown-item d-flex align-items-center gap-2 py-2" href="#"><i class="bi bi-headset text-primary"></i>Soporte</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    
+                    <!-- BOTÓN DE ACCESO: Estilo redondeado e integrado -->
+                    <div class="d-grid d-md-block mt-3 mt-md-0">
+                        <a href="app/login.html" class="btn btn-primary d-flex align-items-center justify-content-center gap-2 px-4 rounded-pill transition-all fw-medium shadow-sm">
+                            <i class="bi bi-box-arrow-in-right"></i>Acceder
+                        </a>
+                    </div>
+                </div>
             </div>
-            </div>
-        </div>
         </nav>
     </header>
     <main>
@@ -280,6 +295,15 @@
             </button>
         </div>
     </main>
+    <footer class="container mt-5">
+        <div class="border-top border-secondary border-opacity-25 py-4 d-flex flex-column flex-sm-row justify-content-between align-items-center gap-3">
+            <p class="small text-secondary mb-0">&copy; 2026 DevFolio Pro. Creado para la sesión de iniciación en Bootstrap.</p>
+            <div class="d-flex gap-3">
+                <a href="https://github.com" target="_blank" class="text-secondary fs-5 hover-custom"><i class="bi bi-github"></i></a>
+                <a href="#" class="text-secondary fs-5 hover-custom"><i class="bi bi-linkedin"></i></a>
+            </div>
+        </div>
+    </footer>
     <script src="assets/js/bootstrap.bundle.js"></script>
 </body>
 </html>

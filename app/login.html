@@ -16,10 +16,69 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <title>Tablas Bootstrap - Selección de Portugal</title>
 
-    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='10' fill='%236610f2'/><path d='M7 20l5-8 4 6 3-4 6 6' stroke='white' stroke-width='2.2' stroke-linecap='round' stroke-linejoin='round' fill='none'/></svg>" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <style>
+        /* Pequeño toque personalizado usando variables nativas de Bootstrap 5 */
+        .btn-custom { background-color: var(--bs-indigo); color: white; }
+        .btn-custom:hover { background-color: #520dc2; color: white; }
+        .text-custom { color: var(--bs-indigo); }
+        .border-custom { border-color: var(--bs-indigo) !important; }
+    </style>
 </head>
 <body class="bg-light">
-
+<header>
+        <!-- NAVBAR: Estilo premium con desenfoque de fondo flotante o fijo -->
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark border-bottom border-primary border-opacity-25 fixed-top px-3 py-2" 
+             style="background-color: rgba(33, 37, 41, 0.85) !important; backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px);">
+            <div class="container-fluid">
+                <!-- LOGO: Identidad K&Y -->
+                <a class="navbar-brand fw-bold d-flex align-items-center gap-1 text-white link-light" href="#">
+                    <i class="bi bi-hexagon-fill text-primary fs-4"></i>K&Y
+                </a>
+                
+                <!-- BOTÓN RESPONSIVE -->
+                <button class="navbar-toggler border-0 p-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <!-- CONTENIDO DESPLEGABLE -->
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav me-auto mb-2 mb-md-0 gap-1 align-items-md-center">
+                        <li class="nav-item">
+                            <a class="nav-link d-flex align-items-center gap-2 px-3 py-2 rounded-3 transition-all" href="table.html">
+                                <i class="bi bi-person-badge text-primary"></i>Players
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link d-flex align-items-center gap-2 px-3 py-2 rounded-3 transition-all" href="login.html">
+                                <i class="bi bi-box-arrow-in-right text-primary"></i>Login
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link d-flex align-items-center gap-2 px-3 py-2 rounded-3 transition-all" href="registro.html">
+                                <i class="bi bi-card-checklist text-primary"></i>Registration Form
+                            </a>
+                        </li>
+                        <!-- GitHub link unificado estéticamente en la lista -->
+                        <li class="nav-item">
+                            <a class="nav-link active d-flex align-items-center gap-2 px-3 py-2 rounded-3 fw-semibold bg-primary bg-opacity-10 text-white transition-all" href="https://github.com" target="_blank">
+                                <i class="bi bi-github text-primary"></i>GitHub
+                            </a>
+                        </li>
+                    </ul>
+                    
+                    <!-- BOTÓN DE ACCIÓN/RETORNO -->
+                    <div class="d-grid d-md-block mt-3 mt-md-0">
+                        <a href="../index.html" class="btn btn-outline-primary d-flex align-items-center justify-content-center gap-2 px-4 rounded-pill transition-all fw-medium shadow-sm">
+                            <i class="bi bi-arrow-left-circle"></i>Volver al Inicio
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+</header>
     <!-- SOLUCIÓN: Agregada etiqueta <main> como punto de referencia principal con el centrado de Bootstrap -->
     <main class="d-flex align-items-center justify-content-center vh-100">
 
@@ -83,7 +142,15 @@
         </div>
 
     </main>
-
+<footer class="container mt-5">
+        <div class="border-top border-secondary border-opacity-25 py-4 d-flex flex-column flex-sm-row justify-content-between align-items-center gap-3">
+            <p class="small text-secondary mb-0">&copy; 2026 DevFolio Pro. Creado para la sesión de iniciación en Bootstrap.</p>
+            <div class="d-flex gap-3">
+                <a href="https://github.com" target="_blank" class="text-secondary fs-5 hover-custom"><i class="bi bi-github"></i></a>
+                <a href="#" class="text-secondary fs-5 hover-custom"><i class="bi bi-linkedin"></i></a>
+            </div>
+        </div>
+    </footer>
     <!-- Script de Bootstrap y validación nativa de formularios -->
     <script src="../assets/js/bootstrap.bundle.min.js"></script>
     <script>
