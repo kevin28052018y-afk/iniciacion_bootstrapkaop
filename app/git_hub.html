@@ -54,7 +54,7 @@
                         </li>
                         <!-- GitHub link unificado estéticamente en la lista -->
                         <li class="nav-item">
-                            <a class="nav-link active d-flex align-items-center gap-2 px-3 py-2 rounded-3 fw-semibold bg-primary bg-opacity-10 text-white transition-all" href="https://github.com" target="_blank">
+                            <a class="nav-link active d-flex align-items-center gap-2 px-3 py-2 rounded-3 fw-semibold bg-primary bg-opacity-10 text-white transition-all" href="#">
                                 <i class="bi bi-github text-primary"></i>GitHub
                             </a>
                         </li>
@@ -70,151 +70,137 @@
             </div>
         </nav>
 </header>
-    <!-- CONTENIDO PRINCIPAL -->
-    <main class="container py-5">
+ <!-- CONTENIDO PRINCIPAL -->
+<main class="container py-5" style="background-color: #000000 !important; color: #ffffff !important;">
 
-        <!-- HEADER: Centrado, moderno y sin la barra lateral rígida -->
-        <header class="text-center mb-5 max-width-700 mx-auto">
-            <span class="badge bg-secondary bg-opacity-25 text-secondary p-2 px-3 rounded-pill text-uppercase tracking-wider small mb-3">Guía Técnica Profesional</span>
-            <h1 class="display-5 fw-extrabold mb-3 text-white">Control de Versiones: Git + VS Code</h1>
-            <p class="text-secondary lead fs-6">Sincroniza tu entorno de desarrollo local con repositorios remotos en GitHub de forma ágil.</p>
-        </header>
+    <!-- HEADER: Contraste máximo certificado -->
+    <header class="text-center mb-5 max-width-700 mx-auto" style="margin-top: 5rem;">
+        <span class="badge bg-primary text-white p-2 px-3 rounded-pill text-uppercase tracking-wider small mb-3 fw-bold">Guía Técnica Profesional</span>
+        <p class="display-5 fw-extrabold mb-3 text-white h1">Control de Versiones: Git + VS Code</p>
+        <p class="text-white lead fs-6">Sincroniza tu entorno de desarrollo local con repositorios remotos en GitHub de forma ágil.</p>
+    </header>
 
-        <!-- REQUISITOS: Transformado en un banner minimalista de advertencia/info -->
-        <div class="card bg-dark border-0 border-start border-4 border-info shadow-sm rounded-3 mb-5" role="alert">
-            <div class="card-body p-4 d-flex gap-3 align-items-center">
-                <div class="bg-info bg-opacity-10 p-2.5 rounded-3 text-info">
-                    <i class="bi bi-bookmark-star-fill fs-4"></i>
-                </div>
-                <div>
-                    <h6 class="mb-1 text-white fw-bold">Requisitos previos obligatorios</h6>
-                    <p class="small text-secondary mb-0">Instala previamente <a href="https://git-scm.com/downloads" target="_blank" class="text-info text-decoration-none fw-medium">Git</a>, configura tu editor <a href="https://code.visualstudio.com/" target="_blank" class="text-info text-decoration-none fw-medium">VS Code</a> y crea un perfil activo en <a href="https://github.com" target="_blank" class="text-info text-decoration-none fw-medium">GitHub</a>.</p>
+    <!-- REQUISITOS: Fondo negro y enlaces en azul cyan de alto contraste -->
+    <div class="card border border-info border-2 shadow-sm rounded-3 mb-5" style="background-color: #000000 !important;" role="alert">
+        <div class="card-body p-4 d-flex gap-3 align-items-center">
+            <div class="bg-info text-black p-2 rounded-3 fw-bold">
+                <i class="bi bi-bookmark-star-fill fs-4"></i>
+            </div>
+            <div>
+                <p class="h6 mb-1 text-white fw-bold">Requisitos previos obligatorios</p>
+                <p class="small text-white mb-0">Instala previamente <a href="https://git-scm.com" target="_blank" class="text-info text-decoration-underline fw-bold">Git</a>, configura tu editor <a href="https://visualstudio.com" target="_blank" class="text-info text-decoration-underline fw-bold">VS Code</a> y crea un perfil activo en <a href="https://github.com" target="_blank" class="text-info text-decoration-underline fw-bold">GitHub</a>.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- CONTENEDOR DE PASOS -->
+    <div class="row g-4">
+
+        <!-- PASO 1 -->
+        <div class="col-12">
+            <div class="card border border-primary border-2 shadow-lg rounded-4 overflow-hidden" style="background-color: #000000 !important;">
+                <div class="card-body p-4 p-md-5">
+                    <div class="d-flex justify-content-between align-items-start mb-4">
+                        <div>
+                            <span class="text-info font-monospace fw-bold text-uppercase small tracking-wider">Paso 01</span>
+                            <p class="h4 mt-1 mb-0 fw-bold text-white">Verificar la instalación del sistema</p>
+                        </div>
+                        <div class="bg-primary text-white px-3 py-1 rounded-pill font-monospace small fw-bold">Terminal</div>
+                    </div>
+                    <p class="text-white mb-3">Despliega la terminal integrada en VS Code usando el atajo de teclado <kbd class="bg-dark border border-white text-white px-2 py-1 rounded">Ctrl + `</kbd> e introduce el siguiente comando de verificación:</p>
+                    
+                    <div class="border border-white border-opacity-50 rounded-3 p-3 mb-4 font-monospace position-relative" style="background-color: #1a1a1a !important;">
+                        <span class="text-info fw-bold">$</span> <code class="text-white">git --version</code>
+                    </div>
+
+                    <!-- CAJA DE ÉXITO REMODELADA: Sin bg-success para evitar problemas -->
+                    <div class="p-3 border border-success border-2 text-white rounded-3 small d-flex align-items-center gap-3" style="background-color: #0a2f1d !important;">
+                        <i class="bi bi-shield-check text-success fs-5 fw-bold"></i>
+                        <span class="fw-bold">Si el sistema retorna una cadena similar a <code>git version 2.x.x</code>, tu instalación se encuentra lista.</span>
+                    </div>
                 </div>
             </div>
         </div>
 
-        <!-- CONTENEDOR DE PASOS -->
-        <div class="row g-4">
+        <!-- PASO 2 -->
+        <div class="col-12">
+            <div class="card border border-primary border-2 shadow-lg rounded-4 overflow-hidden" style="background-color: #000000 !important;">
+                <div class="card-body p-4 p-md-5">
+                    <div class="d-flex justify-content-between align-items-start mb-4">
+                        <div>
+                            <span class="text-info font-monospace fw-bold text-uppercase small tracking-wider">Paso 02</span>
+                            <p class="h4 mt-1 mb-0 fw-bold text-white">Configurar credenciales globales de identidad</p>
+                        </div>
+                        <div class="bg-primary text-white px-3 py-1 rounded-pill font-monospace small fw-bold">Git Config</div>
+                    </div>
+                    <p class="text-white mb-3">Este proceso se realiza una única vez de forma global. Asegúrate de registrar la misma dirección de correo electrónico que utilizas en GitHub:</p>
+                    
+                    <div class="d-flex flex-column gap-2 mb-3">
+                        <div class="border border-white border-opacity-50 rounded-3 p-3 font-monospace" style="background-color: #1a1a1a !important;">
+                            <span class="text-info fw-bold">$</span> <code class="text-white">git config --global user.name "Tu Nombre"</code>
+                        </div>
+                        <div class="border border-white border-opacity-50 rounded-3 p-3 font-monospace" style="background-color: #1a1a1a !important;">
+                            <span class="text-info fw-bold">$</span> <code class="text-white">git config --global user.email "tucorreo@ejemplo.com"</code>
+                        </div>
+                    </div>
 
-            <!-- PASO 1 -->
-            <div class="col-12">
-                <div class="card bg-dark border-0 border-top border-4 border-custom shadow-lg rounded-4 overflow-hidden">
-                    <div class="card-body p-4 p-md-5">
-                        <div class="d-flex justify-content-between align-items-start mb-4">
-                            <div>
-                                <span class="text-custom font-monospace fw-bold text-uppercase small tracking-wider">Paso 01</span>
-                                <h3 class="h4 mt-1 mb-0 fw-bold text-white">Verificar la instalación del sistema</h3>
-                            </div>
-                            <div class="bg-black bg-opacity-50 text-secondary px-3 py-1 rounded-pill font-monospace small">Terminal</div>
-                        </div>
-                        <p class="text-secondary mb-3">Despliega la terminal integrada en VS Code usando el atajo de teclado <kbd class="bg-black border border-secondary border-opacity-50 text-light px-2 py-1 rounded">Ctrl + `</kbd> e introduce el siguiente comando de verificación:</p>
-                        
-                        <div class="bg-black border border-secondary border-opacity-25 rounded-3 p-3 mb-4 font-monospace position-relative">
-                            <span class="text-info">$</span> <code class="text-light">git --version</code>
-                        </div>
+                    <p class="text-white small mb-2"><i class="bi bi-arrow-return-right text-info me-2 fw-bold"></i>Para corroborar que los parámetros se guardaron correctamente en el sistema:</p>
+                    <div class="border border-white border-opacity-50 rounded-3 p-3 mb-4 font-monospace" style="background-color: #1a1a1a !important;">
+                        <span class="text-info fw-bold">$</span> <code class="text-white">git config --list</code>
+                    </div>
 
-                        <div class="p-3 bg-success bg-opacity-10 border border-success border-opacity-25 text-success rounded-3 small d-flex align-items-center gap-3">
-                            <i class="bi bi-shield-check fs-5"></i>
-                            <span>Si el sistema retorna una cadena similar a <code>git version 2.x.x</code>, tu instalación se encuentra lista.</span>
-                        </div>
+                    <div class="p-3 border border-info border-2 text-white rounded-3 small d-flex align-items-center gap-3" style="background-color: #042f40 !important;">
+                        <i class="bi bi-info-circle-fill text-info fs-5"></i>
+                        <span class="fw-bold">Usa el mismo correo electrónico con el que te registraste en tu cuenta de GitHub.</span>
                     </div>
                 </div>
             </div>
-
-            <!-- PASO 2 -->
-            <div class="col-12">
-                <div class="card bg-dark border-0 border-top border-4 border-custom shadow-lg rounded-4 overflow-hidden">
-                    <div class="card-body p-4 p-md-5">
-                        <div class="d-flex justify-content-between align-items-start mb-4">
-                            <div>
-                                <span class="text-custom font-monospace fw-bold text-uppercase small tracking-wider">Paso 02</span>
-                                <h3 class="h4 mt-1 mb-0 fw-bold text-white">Configurar credenciales globales de identidad</h3>
-                            </div>
-                            <div class="bg-black bg-opacity-50 text-secondary px-3 py-1 rounded-pill font-monospace small">Git Config</div>
-                        </div>
-                        <p class="text-secondary mb-3">Este proceso se realiza una única vez de forma global. Asegúrate de registrar la misma dirección de correo electrónico que utilizas en GitHub:</p>
-                        
-                        <div class="d-flex flex-column gap-2 mb-3">
-                            <div class="bg-black border border-secondary border-opacity-25 rounded-3 p-3 font-monospace">
-                                <span class="text-info">$</span> <code class="text-light">git config --global user.name "Tu Nombre"</code>
-                            </div>
-                            <div class="bg-black border border-secondary border-opacity-25 rounded-3 p-3 font-monospace">
-                                <span class="text-info">$</span> <code class="text-light">git config --global user.email "tucorreo@ejemplo.com"</code>
-                            </div>
-                        </div>
-
-                        <p class="text-secondary small mb-2"><i class="bi bi-arrow-return-right text-custom me-2"></i>Para corroborar que los parámetros se guardaron correctamente en el sistema:</p>
-                        <div class="bg-black border border-secondary border-opacity-25 rounded-3 p-3 font-monospace">
-                            <span class="text-info">$</span> <code class="text-light">git config --list</code>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- PASO 3 -->
-            <div class="col-12">
-                <div class="card bg-dark border-0 border-top border-4 border-custom shadow-lg rounded-4 overflow-hidden">
-                    <div class="card-body p-4 p-md-5">
-ce small">Terminal</div>
-                        </div>
-                        <p class="text-secondary mb-3">Establece tu identidad global en el sistema. Estos datos se asociarán a cada uno de tus commits públicos:</p>
-                        
-                        <div class="bg-black border border-secondary border-opacity-25 rounded-3 p-3 mb-4 font-monospace">
-                            <div class="mb-2"><span class="text-info">$</span> <code class="text-light">git config --global user.name "Tu Nombre"</code></div>
-                            <div><span class="text-info">$</span> <code class="text-light">git config --global user.email "tu@email.com"</code></div>
-                        </div>
-
-                        <div class="p-3 bg-secondary bg-opacity-10 border border-secondary border-opacity-25 text-secondary rounded-3 small d-flex align-items-center gap-3">
-                            <i class="bi bi-info-circle fs-5"></i>
-                            <span>Usa el mismo correo electrónico con el que te registraste en tu cuenta de GitHub.</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- PASO 3 -->
-            <div class="col-12">
-                <div class="card bg-dark border-0 border-top border-4 border-custom shadow-lg rounded-4 overflow-hidden">
-                    <div class="card-body p-4 p-md-5">
-                        <div class="d-flex justify-content-between align-items-start mb-4">
-                            <div>
-                                <span class="text-custom font-monospace fw-bold text-uppercase small tracking-wider">Paso 03</span>
-                                <h3 class="h4 mt-1 mb-0 fw-bold text-white">Vincular y subir archivos al repositorio</h3>
-                            </div>
-                            <div class="bg-black bg-opacity-50 text-secondary px-3 py-1 rounded-pill font-monospace small">Terminal</div>
-                        </div>
-                        <p class="text-secondary mb-3">Inicializa tu repositorio local, vincula la URL remota de GitHub y envía tus primeros archivos usando la rama principal:</p>
-                        
-                        <div class="bg-black border border-secondary border-opacity-25 rounded-3 p-3 mb-4 font-monospace">
-                            <div class="mb-2"><span class="text-info">$</span> <code class="text-light">git init</code></div>
-                            <div class="mb-2"><span class="text-info">$</span> <code class="text-light">git remote add origin https://github.com</code></div>
-                            <div class="mb-2"><span class="text-info">$</span> <code class="text-light">git branch -M main</code></div>
-                            <div class="mb-2"><span class="text-info">$</span> <code class="text-light">git add .</code></div>
-                            <div class="mb-2"><span class="text-info">$</span> <code class="text-light">git commit -m "Mi primer commit"</code></div>
-                            <div><span class="text-info">$</span> <code class="text-light">git push -u origin main</code></div>
-                        </div>
-
-                        <div class="p-3 bg-warning bg-opacity-10 border border-warning border-opacity-25 text-warning rounded-3 small d-flex align-items-center gap-3">
-                            <i class="bi bi-exclamation-triangle fs-5"></i>
-                            <span>Si el sistema te indica que el remoto ya existe, utiliza el comando alternativo <code>git remote set-url origin</code>.</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
         </div>
-    </main>
+
+        <!-- PASO 3 -->
+        <div class="col-12">
+            <div class="card border border-primary border-2 shadow-lg rounded-4 overflow-hidden" style="background-color: #000000 !important;">
+                <div class="card-body p-4 p-md-5">
+                    <div class="d-flex justify-content-between align-items-start mb-4">
+                        <div>
+                            <span class="text-info font-monospace fw-bold text-uppercase small tracking-wider">Paso 03</span>
+                            <p class="h4 mt-1 mb-0 fw-bold text-white">Vincular y subir archivos al repositorio</p>
+                        </div>
+                        <div class="bg-primary text-white px-3 py-1 rounded-pill font-monospace small fw-bold">Terminal</div>
+                    </div>
+                    <p class="text-white mb-3">Prepara tus archivos modificados locales, añade una descripción a tu progreso y transfiérelos de forma directa a tu rama principal en la nube:</p>
+                    
+                    <div class="d-flex flex-column gap-2 mb-3">
+                        <div class="border border-white border-opacity-50 rounded-3 p-3 font-monospace" style="background-color: #1a1a1a !important;">
+                            <span class="text-info fw-bold">$</span> <code class="text-white">git add .</code>
+                        </div>
+                        <div class="border border-white border-opacity-50 rounded-3 p-3 font-monospace" style="background-color: #1a1a1a !important;">
+                            <span class="text-info fw-bold">$</span> <code class="text-white">git commit -m "Mi primer commit"</code>
+                        </div>
+                        <div class="border border-white border-opacity-50 rounded-3 p-3 font-monospace" style="background-color: #1a1a1a !important;">
+                            <span class="text-info fw-bold">$</span> <code class="text-white">git push origin main</code>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</main>
 
     <!-- FOOTER: Simple, limpio y adaptado al modo oscuro -->
-    <footer class="container mt-5">
-        <div class="border-top border-secondary border-opacity-25 py-4 d-flex flex-column flex-sm-row justify-content-between align-items-center gap-3">
-            <p class="small text-secondary mb-0">&copy; 2026 DevFolio Pro. Creado para la sesión de iniciación en Bootstrap.</p>
-            <div class="d-flex gap-3">
-                <a href="https://github.com" target="_blank" class="text-secondary fs-5 hover-custom"><i class="bi bi-github"></i></a>
-                <a href="#" class="text-secondary fs-5 hover-custom"><i class="bi bi-linkedin"></i></a>
-            </div>
+<footer class="container mt-5" style="background-color: #000000 !important;">
+    <!-- Se cambió border-secondary por border-white y border-opacity-50 -->
+    <div class="border-top border-white border-opacity-50 py-4 d-flex flex-column flex-sm-row justify-content-between align-items-center gap-3">
+        <!-- Se cambió text-secondary por text-white para solucionar el error de contraste -->
+        <p class="small text-white mb-0 opacity-100">&copy; 2026 DevFolio Pro. Creado para la sesión de iniciación en Bootstrap.</p>
+        <div class="d-flex gap-3">
+            <!-- Se cambiaron las clases text-secondary de los iconos por text-info (azul cyan) de alta visibilidad -->
+            <a href="https://github.com" target="_blank" class="text-info fs-5 hover-custom" aria-label="GitHub"><i class="bi bi-github"></i></a>
+            <a href="#" class="text-info fs-5 hover-custom" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
         </div>
-    </footer>
+    </div>
+</footer>
 
     <!-- Bootstrap Bundle con Popper -->
     <script src="https://jsdelivr.net" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>

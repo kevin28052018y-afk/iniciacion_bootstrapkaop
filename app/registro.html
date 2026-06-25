@@ -20,7 +20,7 @@
         .border-custom { border-color: var(--bs-indigo) !important; }
     </style>
 </head>
-<body class="bg-light">
+<body>
 <header>
         <!-- NAVBAR: Estilo premium con desenfoque de fondo flotante o fijo -->
         <nav class="navbar navbar-expand-md navbar-dark bg-dark border-bottom border-primary border-opacity-25 fixed-top px-3 py-2" 
@@ -50,13 +50,13 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link d-flex align-items-center gap-2 px-3 py-2 rounded-3 transition-all" href="registro.html">
+                            <a class="nav-link d-flex align-items-center gap-2 px-3 py-2 rounded-3 transition-all" href="#">
                                 <i class="bi bi-card-checklist text-primary"></i>Registration Form
                             </a>
                         </li>
                         <!-- GitHub link unificado estéticamente en la lista -->
                         <li class="nav-item">
-                            <a class="nav-link active d-flex align-items-center gap-2 px-3 py-2 rounded-3 fw-semibold bg-primary bg-opacity-10 text-white transition-all" href="https://github.com" target="_blank">
+                            <a class="nav-link active d-flex align-items-center gap-2 px-3 py-2 rounded-3 fw-semibold bg-primary bg-opacity-10 text-white transition-all" href="git_hub.html" target="_blank">
                                 <i class="bi bi-github text-primary"></i>GitHub
                             </a>
                         </li>
@@ -80,7 +80,7 @@
             
             <!-- Encabezado Rojo con letras blancas y amarillas -->
             <div class="card-header bg-danger text-white text-center py-4 border-0">
-                <h3 class="m-0 fw-bold tracking-wide">REGISTRO DE AFICIONADO</h3>
+                <p class="m-0 fw-bold tracking-wide h3">REGISTRO DE AFICIONADO</p>
                 <span class="small text-white text-uppercase">
                     Únete a la Familia de <span class="fw-bold">Portugal</span>
                 </span>
@@ -93,12 +93,12 @@
                     <!-- Fila para Nombre y Apellido (Sistema de rejilla de Bootstrap) -->
                     <div class="row g-3 mb-3">
                         <div class="col-sm-6">
-                            <label for="firstName" class="form-label fw-semibold text-secondary">Nombre</label>
+                            <label for="firstName" class="form-label fw-semibold">Nombre</label>
                             <input type="text" class="form-control" id="firstName" placeholder="Ej. Cristiano" required>
                             <div class="invalid-feedback">El nombre es obligatorio.</div>
                         </div>
                         <div class="col-sm-6">
-                            <label for="lastName" class="form-label fw-semibold text-secondary">Apellido</label>
+                            <label for="lastName" class="form-label fw-semibold">Apellido</label>
                             <input type="text" class="form-control" id="lastName" placeholder="Ej. Ronaldo" required>
                             <div class="invalid-feedback">El apellido es obligatorio.</div>
                         </div>
@@ -106,14 +106,14 @@
 
                     <!-- Correo Electrónico -->
                     <div class="mb-3">
-                        <label for="email" class="form-label fw-semibold text-secondary">Correo Electrónico</label>
+                        <label for="email" class="form-label fw-semibold">Correo Electrónico</label>
                         <input type="email" class="form-control" id="email" placeholder="cr7@fpf.pt" required>
                         <div class="invalid-feedback">Introduce un correo electrónico válido.</div>
                     </div>
 
                     <!-- Selección de Posición/Rol Favorito (Menú desplegable de Bootstrap) -->
                     <div class="mb-3">
-                        <label for="position" class="form-label fw-semibold text-secondary">Posición en la cancha favorita</label>
+                        <label for="position" class="form-label fw-semibold">Posición en la cancha favorita</label>
                         <select class="form-select" id="position" required>
                             <option selected disabled value="">Elige una opción...</option>
                             <option value="1">Guardameta (Portero)</option>
@@ -127,12 +127,12 @@
                     <!-- Fila para Contraseña y Confirmación -->
                     <div class="row g-3 mb-4">
                         <div class="col-sm-6">
-                            <label for="password" class="form-label fw-semibold text-secondary">Contraseña</label>
+                            <label for="password" class="form-label fw-semibold">Contraseña</label>
                             <input type="password" class="form-control" id="password" placeholder="••••••••" required minlength="6">
                             <div class="invalid-feedback">Mínimo 6 caracteres.</div>
                         </div>
                         <div class="col-sm-6">
-                            <label for="confirmPassword" class="form-label fw-semibold text-secondary">Confirmar Contraseña</label>
+                            <label for="confirmPassword" class="form-label fw-semibold">Confirmar Contraseña</label>
                             <input type="password" class="form-control" id="confirmPassword" placeholder="••••••••" required>
                             <div class="invalid-feedback">Confirma tu contraseña de acceso.</div>
                         </div>
@@ -167,10 +167,10 @@
     </main>
     <footer class="container mt-5">
         <div class="border-top border-secondary border-opacity-25 py-4 d-flex flex-column flex-sm-row justify-content-between align-items-center gap-3">
-            <p class="small text-secondary mb-0">&copy; 2026 DevFolio Pro. Creado para la sesión de iniciación en Bootstrap.</p>
+            <p class="small mb-0">&copy; 2026 DevFolio Pro. Creado para la sesión de iniciación en Bootstrap.</p>
             <div class="d-flex gap-3">
-                <a href="https://github.com" target="_blank" class="text-secondary fs-5 hover-custom"><i class="bi bi-github"></i></a>
-                <a href="#" class="text-secondary fs-5 hover-custom"><i class="bi bi-linkedin"></i></a>
+                <a href="https://github.com" target="_blank" aria-label="GitHub" class="text-secondary fs-5 hover-custom"><i class="bi bi-github"></i></a>
+                <a href="#" aria-label="LinkedIn" class="fs-5 hover-custom"><i class="bi bi-linkedin"></i></a>
             </div>
         </div>
     </footer>
