@@ -77,6 +77,26 @@
         .btn-custom:hover { background-color: #520dc2; color: white; }
         .text-custom { color: var(--bs-indigo); }
         .border-custom { border-color: var(--bs-indigo) !important; }
+        /* Aumentar contraste localmente en la página de tablas */
+        .table-card .text-secondary,
+        .table-card .text-muted,
+        .table-card .small,
+        .table-card td .text-muted,
+        .table-card th .text-muted {
+            color: #212529 !important; /* etiquetas y textos secundarios más oscuros */
+        }
+
+        /* Asegurar legibilidad del subtítulo dentro del header con gradiente */
+        .portugal-header .text-white-50 {
+            color: rgba(255,255,255,0.92) !important;
+        }
+
+        /* Footer y enlaces secundarios más visibles */
+        footer .text-secondary,
+        footer .text-muted,
+        .hover-custom {
+            color: #495057 !important;
+        }
     </style>
 </head>
 <body>

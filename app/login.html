@@ -25,6 +25,21 @@
         .btn-custom:hover { background-color: #520dc2; color: white; }
         .text-custom { color: var(--bs-indigo); }
         .border-custom { border-color: var(--bs-indigo) !important; }
+        /* Aumentar contraste localmente en la página de login
+           - Usamos selectores acotados para no afectar otras páginas
+           - Valores elegidos para cumplir contraste legible (>= 4.5:1)
+        */
+        main .form-label.text-secondary,
+        .card .text-secondary {
+            color: #212529 !important; /* texto oscuro para labels */
+        }
+
+        main .text-muted,
+        .card .text-muted,
+        footer .text-secondary,
+        footer .text-muted {
+            color: #495057 !important; /* texto secundario más oscuro */
+        }
     </style>
 </head>
 <body class="bg-light">
